@@ -63,18 +63,18 @@ export default function TrackingScreen({ navigation }) {
           <Text style={styles.sectionTitle}>Payment Summary</Text>
           <View style={styles.priceRow}>
             <Text style={styles.priceLabel}>Price</Text>
-            <Text style={styles.priceVal}>$4.53</Text>
+            <Text style={styles.priceVal}>Rp 45.000</Text>
           </View>
           <View style={styles.priceRow}>
             <Text style={styles.priceLabel}>Delivery Fee</Text>
-            <Text style={styles.priceVal}>$1.00</Text>
+            <Text style={styles.priceVal}>Rp 10.000</Text>
           </View>
           
           <View style={{ height: 1, backgroundColor: '#EAEAEA', marginVertical: 15 }} />
           
           <View style={styles.priceRow}>
             <Text style={{ fontWeight: 'bold', fontSize: 16 }}>Total Payment</Text>
-            <Text style={{ fontWeight: 'bold', fontSize: 16, color: '#C67C4E' }}>$5.53</Text>
+            <Text style={{ fontWeight: 'bold', fontSize: 16, color: '#C67C4E' }}>Rp 55.000</Text>
           </View>
 
           <TouchableOpacity style={styles.mainBtn} onPress={() => setIsOrdered(true)}>
