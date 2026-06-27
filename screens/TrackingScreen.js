@@ -60,7 +60,7 @@ export default function TrackingScreen({ navigation }) {
           <View style={{ height: 4, backgroundColor: '#F4F4F4', marginVertical: 20, borderRadius: 2 }} />
 
           {/* Payment Summary */}
-          <Text style={styles.sectionTitle}>Payment Summary</Text>
+         <Text style={styles.sectionTitle}>Payment Summary</Text>
           <View style={styles.priceRow}>
             <Text style={styles.priceLabel}>Price</Text>
             <Text style={styles.priceVal}>Rp 45.000</Text>
