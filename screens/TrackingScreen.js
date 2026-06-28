@@ -3,13 +3,11 @@ import { View, Text, StyleSheet, Image, TouchableOpacity, ScrollView } from 'rea
 
 export default function TrackingScreen({ navigation }) {
   const [isOrdered, setIsOrdered] = useState(false);
-  // State baru untuk navigasi Deliver / Pick Up
   const [deliveryMethod, setDeliveryMethod] = useState('Deliver'); 
 
   return (
     <View style={styles.container}>
       {!isOrdered ? (
-        // ALUR ORDER & PAYMENT
         <ScrollView contentContainerStyle={{ padding: 20, paddingTop: 40 }}>
           <View style={styles.header}>
             <TouchableOpacity onPress={() => navigation.goBack()}>
@@ -82,7 +80,6 @@ export default function TrackingScreen({ navigation }) {
           </TouchableOpacity>
         </ScrollView>
       ) : (
-        // ALUR MAPS TRACKING 
         <View style={{ flex: 1 }}>
           <View style={styles.mapPlaceholder}>
             <Text style={{ color: '#989898', fontSize: 16 }}>[ Peta Jalur Pengiriman Kopi ]</Text>
@@ -117,7 +114,6 @@ const styles = StyleSheet.create({
   header: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 25 },
   headerTitle: { fontSize: 18, fontWeight: 'bold', color: '#2F2F2F' },
   
-  // Style Navigasi Order yang diperbarui
   toggleContainer: { flexDirection: 'row', backgroundColor: '#F3F3F3', borderRadius: 14, padding: 4, marginBottom: 25 },
   toggleBtn: { flex: 1, paddingVertical: 10, alignItems: 'center', borderRadius: 10 },
   toggleActive: { backgroundColor: '#C67C4E' },
