@@ -3,7 +3,6 @@ import { View, Text, Image, TouchableOpacity } from 'react-native';
 import styles from '../style/detail.style';
 
 export default function DetailScreen({ route, navigation }) {
- // Ubah baris ini di DetailScreen.js
   const { coffee } = route.params || { coffee: { name: 'Caffe Mocha', type: 'Deep Foam', price: 'Rp 45.000', image: require('../assets/images/mocha.png') } };
   const [size, setSize] = useState('M');
 
