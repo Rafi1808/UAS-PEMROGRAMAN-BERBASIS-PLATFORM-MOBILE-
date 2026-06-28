@@ -7,8 +7,6 @@ const categories = ['All Coffee', 'Machiato', 'Latte', 'Americano'];
 export default function HomeScreen({ navigation }) {
   const [activeCat, setActiveCat] = useState('All Coffee');
   
-  // Menggunakan nama file & aset sesuai daftar yang kamu sediakan
- // Ubah bagian ini di HomeScreen.js
   const coffeeData = [
     { id: '1', name: 'Caffe Mocha', type: 'Deep Foam', price: 'Rp 45.000', rating: '4.8', image: require('../assets/images/mocha.png') },
     { id: '2', name: 'Flat White', type: 'Espresso', price: 'Rp 35.000', rating: '4.8', image: require('../assets/images/flatwhite.png') },
